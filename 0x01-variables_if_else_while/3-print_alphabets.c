@@ -1,26 +1,17 @@
 #include <stdio.h>
 /**
- * main - Entry point
- *
+ * main - print alphabeth in lower case
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 	char c;
-	char d;
 
-	c = 'a';
-	d = 'A';
-	while
-		(c <= 'z') {
-			putchar(c);
-			c++;
-		}
-	while
-		(c <= 'Z') {
-			putchar(d);
-			d++;
-		}
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		putchar(c);
+	}
 	putchar('\n');
 	return (0);
 }
+
