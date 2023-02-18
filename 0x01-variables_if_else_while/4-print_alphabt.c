@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints alpha in lower and upper case
+ * main - Entry point
  * Return: Always 0
  */
 int main(void)
@@ -10,9 +10,10 @@ int main(void)
 	c = 'a';
 	while
 		(c <= 'z') {
-			if (c != 'q' && c != 'e') && c <= 'z')
+
+			if ((c != 'q' && c != 'e') && c <= 'z')
 				putchar(c);
-			c++
+			c++;
 		}
 	putchar('\n');
 	return (0);
