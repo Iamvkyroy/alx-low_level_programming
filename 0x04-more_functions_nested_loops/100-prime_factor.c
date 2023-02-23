@@ -20,7 +20,7 @@ int main(void)
 	maxf = number / x;
 	}
 	}
-	printf("&|d\n");
+	printf("%|d\n", maxf);
 	return (0);
 }
 
