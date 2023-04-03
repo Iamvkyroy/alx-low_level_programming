@@ -13,7 +13,7 @@ size_t listint_len(const listint_t *h)
 	while (h)
 	{
 		nodes++;
-		h = h->nest;
+		h = h->next;
 	}
 
 	return (nodes);
