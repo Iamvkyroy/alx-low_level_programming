@@ -10,15 +10,15 @@
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-listint_t *vky;
-
-vky = malloc(sizeof(listint_t));
-if (!vky)
-return (NULL);
-
-vky->n = n;
-vky->next = *head;
-*head = vky;
-
-return (vky);
+	listint_t *vky;
+	
+	vky = malloc(sizeof(listint_t));
+	if (vky == NULL)
+		return (NULL);
+	
+	vky->n = n;
+	vky->next = *head;
+	*head = vky;
+	
+	return (vky);
 }
