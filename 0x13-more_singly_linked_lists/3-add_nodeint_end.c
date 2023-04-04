@@ -9,6 +9,24 @@
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *
- 
+listint_t *vky;
+listint_t *temp = *head;
 
+vky = malloc(sizeof(listint_t));
+if (!vky)
+return (NULL);
+
+vky->n = n;
+vky->next = NULL;
+if (*head == NULL)
+{
+*head = vky;
+return (vky);
+}
+while (temp->next)
+temp = temp->next;
+
+temp->next = vky;
+
+return (vky);
+}
