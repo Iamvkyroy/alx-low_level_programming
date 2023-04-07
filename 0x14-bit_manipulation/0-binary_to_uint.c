@@ -8,20 +8,20 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int v;
-	unsigned int victor = 0;
+	int i;
+	unsigned int vkyroy = 0;
 
 	if (!b)
 		return (0);
 
-	for (v = 0; b[v]; v++)
+	for (i = 0; b[i]; i++)
 	{
-		if (b[v] < '0' || b[v] > '1')
+		if (b[i] < '0' || b[i] > '1')
 			return (0);
-		victor = 2 * victor + (b[v] - '0');
+		vkyroy = 2 * vkyroy + (b[i] - '0');
 	}
 
-	return (victor);
+	return (vkyroy);
 }
 
 
