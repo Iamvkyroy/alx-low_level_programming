@@ -17,5 +17,5 @@ unsigned int count = 0;
 		my_value &= (my_value - 1);
 		count++;
 	}
-return count;
+return (count);
 }
