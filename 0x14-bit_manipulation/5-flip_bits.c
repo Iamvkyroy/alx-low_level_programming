@@ -10,15 +10,12 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-int i, count = 0;
-unsigned long int new;
-unsigned long int complete = n ^ m;
-
-for (i = 63; i >= 0; i--)
-{
-new = complete >> i;
-if (new & 1)
-number++;
-}
-return (count);
+unsigned long int my_value = n ^ m;
+unsigned int count = 0;
+	while (my_value != 0)
+	{
+		my_value &= (my_value - 1);
+		count++;
+	}
+return count;
 }
