@@ -1,12 +1,3 @@
-/*
- * File_name: 100-elf_header.c
- * Created: 8th of May, 2023
- * Auth: Victor Ita 
- * Size: undefined
- * Project: alx-low_level_programming
- * Status: submitted.
- */
-
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
